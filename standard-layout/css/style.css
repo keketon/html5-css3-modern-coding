@@ -8,15 +8,23 @@ body {
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   color: #d03c56;
   text-decoration: none;
 }
 .header {
   width: 100%;
+  padding: 28px 0 10px;
+  background: url("../images/bg-header.gif") repeat-x;
+  box-shadow: 0 0 10px #e3e3e3;
 }
 .wrapper {
   width: 970px;
@@ -33,4 +41,40 @@ a:link, a:visited, a:hover, a:active {
 }
 .footer {
   width: 100%;
+}
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url("../images/logo.png");
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* for confirmation */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header,
+.main,
+.sidemenu,
+.footer {
+  border: 1px solid, #aaa;
+  background-color: #ccc;
+}
+.header,
+.footer {
+  height: 100px;
+}
+.main,
+.sidemenu {
+  height: 500px;
 }

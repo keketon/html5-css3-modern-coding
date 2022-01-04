@@ -42,8 +42,10 @@ a:active {
   float: right;
   width: 275px;
 }
-.footer {
-  width: 100%;
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .logo {
   width: 225px;
@@ -327,7 +329,7 @@ a:active {
 .documents > li ul {
   margin: 15px;
 }
-.documents > li ul > li{
+.documents > li ul > li {
   margin-bottom: 15px;
   padding-left: 10px;
   background: url("../images/arrow.gif") no-repeat left center;
@@ -342,7 +344,7 @@ a:active {
   font-size: 0;
 }
 .search-box > * {
-font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .search-box .search-input {
   width: 205px;
@@ -362,16 +364,37 @@ font-size: 1.2rem;
   margin-top: 12px;
 }
 
-/* for confirmation */
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .footer {
-  border: 1px solid, #aaa;
-  background-color: #ccc;
+  width: 100%;
+  padding: 20px 0 30px;
+  background: url("../images/bg-footer.gif");
+  color: #fff;
 }
-.footer {
-  height: 100px;
+.horizontal-list {
+  width: 970px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 0;
+}
+.horizontal-list .horizontal-item {
+  display: inline-block;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+.horizontal-list .horizontal-item + .horizontal-item {
+  border-left: 1px solid #bbb;
+}
+.horizontal-list .horizontal-item a {
+  border-bottom: 1px dashed #777;
+  color: #bbb;
+  font-size: 1.1rem;
+  transition: color 0.15s;
+}
+.horizontal-list .horizontal-item a:hover {
+  color: #ddd;
+}
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 1px;
 }

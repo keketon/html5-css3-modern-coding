@@ -249,6 +249,7 @@ a:active {
   counter-reset: ranking;
 }
 .ranking .ranking-item {
+  position: relative;
   margin-top: 15px;
 }
 .ranking .ranking-item a {
@@ -265,7 +266,7 @@ a:active {
   border: none;
   color: #fff;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 20px;
 }
 .ranking .ranking-item:nth-of-type(1) .order {
   background-color: #dab413;
@@ -277,6 +278,7 @@ a:active {
   background-color: #a0541a;
 }
 .ranking .image {
+  margin-right: 20px;
   width: 55px;
   height: 55px;
 }
@@ -290,19 +292,18 @@ a:active {
 }
 .ranking .order {
   display: inline-block;
-  position: relative;
-  left: -8px;
-  top: -8px;
-  width: 18px;
-  height: 18px;
+  position: absolute;
+  left: 44px;
+  top: -9px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #ccc;
   color: #aaa;
   background-color: #fff;
-  vertical-align: top;
   text-align: center;
   font-weight: bold;
-  line-height: 12px;
-  border-radius: 9px;
+  line-height: 18px;
+  border-radius: 50%;
 }
 .ranking .order::before {
   content: counter(ranking);

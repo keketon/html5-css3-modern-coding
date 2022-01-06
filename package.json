@@ -1,0 +1,15 @@
+{
+  "name": "html5-css3-modern-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css-grid": "node-sass --output-style expanded --include-path scss grid-layout/scss/style.scss grid-layout/css/style.css",
+    "watch-css-grid": "npm run build-css-grid -- -w"
+  },
+  "author": "keketon",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,11 +1,15 @@
+@charset "UTF-8";
+
 html {
   font-size: 62.5%;
 }
-
-*, *::before, *::after {
-  box-sizing: border-box;
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
-
 body {
   background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
   background-size: cover;

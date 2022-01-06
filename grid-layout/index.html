@@ -9,6 +9,35 @@
 </head>
 
 <body>
+  <section class="item item-l item-maindish">
+    <a href="#">
+      <img class="image" src="images/image_L_1.jpg" alt="メインディッシュ">
+      <div class="category">MAIN DISH</div>
+      <p class="description">
+        メインディッシュを発生するには、一体どうやってできるのか；一方、メインディッシュを発生させない場合、何を通じてそれをできるのでしょうか。 私にとって、
+        メインディッシュはなんのことで発生したのか？こんな事実は私本人に対して深刻な意味を持って、この世界にとってもある程度有意義なことだと信じています。
+      </p>
+    </a>
+  </section>
+  <section class="item item-m item-appetizer">
+    <a href="#">
+      <img class="image" src="images/image_M_2.jpg" alt="前菜">
+      <div class="category">APPETIZER</div>
+      <p class="description">
+        昔シェイクスピアは不意にこう言いました、「うわべになにか「徳」のしるしをつけないような素直な「悪」はない。」短いながら、この言葉は私に様々な考えを持たせます。 前菜は一体どんな存在であるかをずばり考えることです。
+      </p>
+    </a>
+  </section>
+  <section class="item item-m item-maindish">
+    <a href="#">
+      <img class="image" src="images/image_M_2.jpg" alt="メインディッシュ">
+      <div class="category">MAIN DISH</div>
+      <p class="description">
+        メインディッシュを発生するには、一体どうやってできるのか；一方、メインディッシュを発生させない場合、何を通じてそれをできるのでしょうか。 私にとって、
+        メインディッシュはなんのことで発生したのか？こんな事実は私本人に対して深刻な意味を持って、この世界にとってもある程度有意義なことだと信じています。
+      </p>
+    </a>
+  </section>
   <section class="item item-maindish">
     <a href="#">
       <img class="image" src="images/image_S_1.jpg" alt="メインディッシュ">
@@ -25,6 +54,15 @@
       <div class="category">APPETIZER</div>
       <p class="description">
         昔シェイクスピアは不意にこう言いました、「うわべになにか「徳」のしるしをつけないような素直な「悪」はない。」短いながら、この言葉は私に様々な考えを持たせます。 前菜は一体どんな存在であるかをずばり考えることです。
+      </p>
+    </a>
+  </section>
+  <section class="item item-m item-breaktime">
+    <a href="#">
+      <img class="image" src="images/image_M_3.jpg" alt="おやつの時間">
+      <div class="category">BREAK TIME</div>
+      <p class="description">
+        おやつの時間は、発生したら何が起こるのか、発生しなければ結果はどうなるのか。 私にとって、 私本人もじっくり考えながら、夜となく昼となくおやつの時間のことを考えています。 今では、趣旨に関する問題を解決するのが一番大事です。
       </p>
     </a>
   </section>
@@ -84,6 +122,15 @@
       </p>
     </a>
   </section>
+  <section class="item item-m item-appetizer">
+    <a href="#">
+      <img class="image" src="images/image_M_4.jpg" alt="前菜">
+      <div class="category">APPETIZER</div>
+      <p class="description">
+        昔シェイクスピアは不意にこう言いました、「うわべになにか「徳」のしるしをつけないような素直な「悪」はない。」短いながら、この言葉は私に様々な考えを持たせます。 前菜は一体どんな存在であるかをずばり考えることです。
+      </p>
+    </a>
+  </section>
   <section class="item item-column">
     <a href="#">
       <img class="image" src="images/image_S_9.jpg" alt="コラム">
@@ -105,11 +152,13 @@
   </section>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script>
-    new Masonry('body', {
-      itemSelector: '.item',
-      columnWidth: 180,
-      gutter: 4,
-    });
+    window.onload = () => {
+      new Masonry('body', {
+        itemSelector: '.item',
+        columnWidth: 180,
+        gutter: 4,
+      });
+    };
   </script>
 </body>
 

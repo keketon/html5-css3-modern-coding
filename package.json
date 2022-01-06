@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build-css-grid": "node-sass --output-style expanded --include-path scss grid-layout/scss/style.scss grid-layout/css/style.css",
-    "watch-css-grid": "npm run build-css-grid -- -w"
+    "watch-css-grid": "npm run build-css-grid -- -w",
+    "build-css-spl": "node-sass --output-style expanded --include-path scss singlepage-layout/scss/style.scss singlepage-layout/css/style.css",
+    "watch-css-spl": "npm run build-css-spl -- -w"
   },
   "author": "keketon",
   "license": "ISC",

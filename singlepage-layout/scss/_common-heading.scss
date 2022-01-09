@@ -13,14 +13,12 @@
   &::before,
   &::after {
     content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid #999;
-  }
-
-  &::before {
-    bottom: 5px;
+    display: inline-block;
+    height: 0.3em;
+    width: 0.3em;
+    margin: 0 0.5em;
+    border: 1px solid;
+    vertical-align: 0.2em;
+    transform: rotate(45deg);
   }
 }

@@ -133,15 +133,13 @@ body {
 
 .heading::before, .heading::after {
   content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid #999;
-}
-
-.heading::before {
-  bottom: 5px;
+  display: inline-block;
+  height: 0.3em;
+  width: 0.3em;
+  margin: 0 0.5em;
+  border: 1px solid;
+  vertical-align: 0.2em;
+  transform: rotate(45deg);
 }
 
 .about {
@@ -182,6 +180,7 @@ body {
 .work-box {
   position: relative;
   display: table-cell;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -236,16 +235,29 @@ body {
   top: 0;
 }
 
+.work-box:nth-of-type(odd) img {
+  transform-origin: top center;
+}
+
+.work-box:nth-of-type(even) img {
+  transform-origin: bottom center;
+}
+
 .work-image {
   display: block;
   width: 100%;
   margin: 0 0 60%;
+  transition: transform 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {
   .work-image {
     display: none;
   }
+}
+
+.work-image:hover {
+  transform: scale(1.1);
 }
 
 .work-description {

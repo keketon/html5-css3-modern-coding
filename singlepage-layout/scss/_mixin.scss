@@ -1,0 +1,12 @@
+$sizes: sp;
+
+$breakpoint-up: (
+  "sp": "(max-width: 768px)",
+  "tb": "(max-width: 1024px)",
+) !default;
+
+@mixin mq-up($breakpoint: sp) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}

@@ -8,12 +8,21 @@
     width: 80%;
     margin: 50px auto 0;
     table-layout: fixed;
+
+    @include mq-up("sp") {
+      display: block;
+    }
   }
 }
 
 .skill {
   &-box {
     display: table-cell;
+
+    @include mq-up("sp") {
+      display: block;
+      margin: 40px auto;
+    }
   }
 
   &-icon {
@@ -25,6 +34,13 @@
     color: #f1b400;
     font-size: 8rem;
     line-height: 142px;
+
+    @include mq-up("sp") {
+      width: 100px;
+      height: 100px;
+      font-size: 5rem;
+      line-height: 92px;
+    }
   }
 
   &-title {
@@ -35,5 +51,9 @@
   &-text {
     margin: 0 20px;
     line-height: 2;
+
+    @include mq-up("sp") {
+      margin: 0;
+    }
   }
 }

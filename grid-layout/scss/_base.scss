@@ -7,6 +7,10 @@ body {
   color: #333;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+  @include mq-up("sp") {
+    font-size: 1.3rem;
+  }
 }
 * {
   &,

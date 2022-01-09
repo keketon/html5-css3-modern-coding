@@ -1,11 +1,19 @@
 .header {
   padding: 170px 30px 80px;
+
+  @include mq-up("sp") {
+    padding-top: 60px;
+  }
 }
 
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
   font-size: 2.2rem;
+
+  @include mq-up("sp") {
+    font-size: 1.7rem;
+  }
 
   &::before,
   &::after {
@@ -16,12 +24,23 @@
     margin: 0 30px;
     background-color: #fff;
     vertical-align: middle;
+
+    @include mq-up("sp") {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
   }
 }
 
 .site-title {
   margin: 50px 0 40px;
   font-size: 7.6rem;
+
+  @include mq-up("sp") {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
 }
 
 .site-description {
@@ -44,6 +63,10 @@
 
   &:hover {
     opacity: 0.9;
+
+    @include mq-up("sp") {
+      opacity: 1;
+    }
   }
 
   &-showy {
